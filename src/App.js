@@ -3,6 +3,13 @@ import React, {Component} from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css"
 
+// importing components of the page
+import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar';
+import Sidecart from './components/Sidecart';
+import Footer from './components/Footer' ;
+
+// routing for the pages
 import AboutPage from './pages/AboutPage';
 import CartPage from './pages/CartPage';
 import ContactPage from './pages/ContactPage';
@@ -16,6 +23,9 @@ class App extends Component{
   render(){
     return (
       <>
+      <Navbar />
+      <Sidebar />
+      <Sidecart />
       <Switch>
       <Route path="/" exact component={HomePage} />
       <Route path="/about"  component={AboutPage} />
@@ -26,7 +36,8 @@ class App extends Component{
       <Route  component={Default} />
 
 
-    </Switch>
+      </Switch>
+      <Footer />
       </>
     )
   }
