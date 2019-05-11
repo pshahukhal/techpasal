@@ -7,8 +7,8 @@
   --darkGrey: #5f5e5e;
   --mainWhite: #fff;
   --mainBlack: #222;
-  --msainTransition: all 0.3s ease-in-out;
-  --mainSpacing: 0.3rem;
+  --mainTransition: all 0.3s ease-in-out;
+  --mainSpacing: 0.4rem;
 }
 
 .text-title{
